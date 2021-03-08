@@ -1,0 +1,125 @@
+@media(max-width:1300px){
+    .portfolio__inner{
+        justify-content: space-around;
+    }
+}
+@media(max-width:1200px){
+    .about__list{
+        flex-wrap: wrap;
+        // justify-content: space-around;
+        justify-content: flex-start;
+    }
+    .about__list-item{
+        margin-bottom: 20px;
+    }
+    .portfolio__popup-inner{
+        display: block;
+        max-width: 700px;
+    }
+    .portfolio__popup-info{
+        margin-right: 0;
+    }
+    .portfolio__popup-link{
+        width: 100%;
+    }
+}
+@media(max-width:1000px){
+    .about__img{
+        margin-right: 30px;
+        max-width: 150px;
+        height: 150px;
+    }
+}
+@media(max-width:800px){
+    .header{
+        &__inner{
+
+            height: auto;
+        }
+        .menu__btn{
+            display: block;
+            cursor: pointer;
+            &.menu__btn--active{
+                transition: all 0.3s;
+                span{
+                    opacity: 0;
+                }
+                &::before{
+                    transform: rotate(135deg);
+                    top: 13px;
+                }
+                &::after{
+                    transform: rotate(-135deg);
+                    bottom:  13px;
+                }
+            }
+        }
+        .menu__list{
+            display: none;
+            &.menu__list--active{
+                display: block;
+                
+            }
+        }
+        .menu__list-item{
+            display: block;
+            text-align: center;
+            padding: 30px 0;
+            
+            & + .menu__list-item{
+                margin-left: 0;
+            }
+        }
+        &.fixed .menu__list-item+.menu__list-item{
+            margin-left: 0;
+        }
+
+    }
+    
+    
+    .portfolio__item{
+       overflow: visible;
+       padding-top: 100px;
+       height: 300px;
+       margin-bottom: 50px;
+    }
+    .portfolio__link{
+        opacity: 1;
+        background-color: transparent;
+        &::before{
+            display: none;
+        }
+    }
+    .portfolio__item-descr{
+        color: #000;
+        transform: translateY(0);
+        top: 0;
+    }
+    .fancybox-content{
+        padding: 30px 10px 20px;
+    }
+    
+}
+@media(max-width:500px){
+    .top__title{
+        font-size: 42px;
+        line-height: 56px;
+    }
+    .about__list{
+        display: block;
+        text-align: center;
+    }
+    .about__list-item{
+        display: block;
+        &:not(:last-child){
+            margin-right: 0;
+        }
+    }
+    .about__top{
+        display: block;
+    }
+    .about__img{
+        display: block;
+        margin: 0 auto;
+    }
+}

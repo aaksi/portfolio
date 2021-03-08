@@ -4,13 +4,286 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <header class="header" >
+        <div class="container">
+            <div class="header__inner">
+                <nav class="menu">
+                    <div class="menu__btn"><span></span></div>
+                    <ul class="menu__list">
+                        <li class="menu__list-item"><a href="#top" class="menu__list-link">Главная</a></li>
+                        <li class="menu__list-item"><a href="#about" class="menu__list-link">Обо мне</a></li>
+                        <li class="menu__list-item"><a href="#portfolio" class="menu__list-link">Портфолио </a></li>
+                        <li class="menu__list-item"><a href="#contact" class="menu__list-link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="top" class="top" style="background-image: url('images/top-bg.jpg');">
+        <div class="top__wrapper">
+            <div class="container">
+                <div class="top__inner">
+                    <h1 class="top__title">Front-End веб-разработчик</h1>
+                    <p class="top__subtitle">со страстью к обучению</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="about__title">О <span>себе</span></h2>
+            <div class="about__inner">
+                <div class="about__top">
+                    <div class="about__img" >
+                        <img src="images/avatar1.jpg" alt="">
+                    </div>
+                    <div class="about__descr">
+                        <p>Я приветствую Вас на своем  сайте-портфолио.</p>
+                        <p>Меня зовут Станислав Куликов, я начинающий HTML-верстальщик и  веб-разработчик из Краснодара. С большим увлечением совершенствуюсь в области web-разработки. Я ежедневно веду разработку  для получения опыта. Хочу найти работу с возможностью  дальше развиваться и узнавать что-то новое в этой области.</p>
+                    </div>
+                </div>
+                <h5 class="about__list-title">Технологии которые я применяю</h5>
+                <ul class="about__list">
+                    <li class="about__list-item"> <img src="images/icons/html5.svg" alt="HTML иконка"> HTML</li>
+                    <li class="about__list-item"> <img src="images/icons/css3.svg" alt="CSS иконка"> CSS</li>
+                    <li class="about__list-item"> <img src="images/icons/sass.svg" alt="SASS иконка"> SASS/SCSS</li>
+                    <li class="about__list-item"> <img src="images/icons/jquery.svg" alt="jQuery иконка"> jQuery</li>
+                    <li class="about__list-item"> <img src="images/icons/js.svg" alt="JavaScript иконка">JavaScript</li>
+                    <li class="about__list-item"> <img src="images/icons/bem.svg" alt="БЭМ иконка"> Методология БЭМ</li>
+                    <li class="about__list-item"> <img src="images/icons/gulp.svg" alt="GULP иконка"> GULP</li>
+                    <li class="about__list-item"> <img src="images/icons/github.svg" alt="GitHub иконка"> GitHub</li>
+                  
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="portfolio__title">Портфолио</h2>
+            <p class="portfolio__descr">Щелкните на изображение, чтобы увидеть описание проекта.</p>
+            <div class="portfolio__inner">
+                <div class="portfolio__item" >
+                    
+                    <img src="images/content/site1.jpg" alt="Интернет магазин сельхозтехники">
+                    <a href="#" class="portfolio__link"  data-fancybox data-src="#site-1"><p class="portfolio__item-descr">Интернет магазин сельхозтехники </p></a>
+                </div>
+                <div id="site-1" class="portfolio__popup">
+                    <div class="portfolio__popup-inner">
+                        <div class="portfolio__popup-info">
+                            <h5 class="portfolio__popup-title">Технологии, использованные при создании проекта:</h5>
+                            <ul class="portfolio__popup-list">
+                                <li class="portfolio__popup-item">HTML</li>
+                                <li class="portfolio__popup-item">SCSS</li>
+                                <li class="portfolio__popup-item">Jquery</li>
+                                <li class="portfolio__popup-item">JavaScript</li>
+                                <li class="portfolio__popup-item">Gulp</li>
+                                <li class="portfolio__popup-item">GitHub</li>
+                                <li class="portfolio__popup-item portfolio__popup-item--descr">Нажмите на изображение, чтобы увидеть веб-сайт в новой вкладке или выберите страницу :</li>
+                                <li class="portfolio__popup-item portfolio__popup-item--descr">
+                                    <a target="_blank" href="https://aaksi.github.io/peleng-agro/">Главная страница</a>
+                                </li>
+                                <li class="portfolio__popup-item portfolio__popup-item--descr">
+                                    <a target="_blank" href="https://aaksi.github.io/peleng-agro/catalog.html">Страница каталога</a></li>
+                                <li class="portfolio__popup-item portfolio__popup-item--descr">
+                                    <a target="_blank" href="https://aaksi.github.io/peleng-agro/product.html">Страница товара</a>
+                                </li>
+                                <li class="portfolio__popup-item portfolio__popup-item--descr">
+                                    <a target="_blank" href="https://aaksi.github.io/peleng-agro/404.html">Страница 404</a>
+                                </li>
+                                
+                                <li class="portfolio__popup-item portfolio__popup-item--descr">Щелкните <a target="_blank" href="https://github.com/aaksi/peleng-agro">здесь</a>, чтобы получить исходный код с GitHub.</li>
+                            </ul>
+                        </div>
+                        <a target="_blank" href="https://aaksi.github.io/peleng-agro/" class="portfolio__popup-link">
+                            <img src="images/content/site1.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="portfolio__item">
+                    <img src="images/content/site2.jpg" alt="Сайт архитектурно-строительной компании">
+                    <a href="#" class="portfolio__link"  data-fancybox data-src="#site-2"><p class="portfolio__item-descr">Сайт архитектурно-строительной компании</p></a>
+                </div>
+                <div id="site-2" class="portfolio__popup">
+                    <div class="portfolio__popup-inner">
+                        <div class="portfolio__popup-info">
+                            <h5 class="portfolio__popup-title">Технологии, использованные при создании проекта:</h5>
+                            <ul class="portfolio__popup-list">
+                                <li class="portfolio__popup-item">HTML</li>
+                                <li class="portfolio__popup-item">SCSS</li>
+                                <li class="portfolio__popup-item">Jquery</li>
+                                <li class="portfolio__popup-item">БЭМ</li>
+                                <li class="portfolio__popup-item">Постраничный скроллинг</li>
+                                <li class="portfolio__popup-item">JavaScript</li>
+                                <li class="portfolio__popup-item">Gulp</li>
+                                <li class="portfolio__popup-item">GitHub</li>
+                                <li class="portfolio__popup-item portfolio__popup-item--descr">Нажмите на изображение, чтобы увидеть веб-сайт в новой вкладке. </li>
+                                
+                                <li class="portfolio__popup-item portfolio__popup-item--descr">Щелкните <a target="_blank" href="https://github.com/aaksi/LIKE_I_LIKE">здесь</a>, чтобы получить исходный код с GitHub.</li>
+                            </ul>
+                        </div>
+                        <a target="_blank" href="https://aaksi.github.io/LIKE_I_LIKE/" class="portfolio__popup-link">
+                            <img src="images/content/site2.jpg" alt="Сайт архитектурно-строительной компании">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <img src="images/content/site3.jpg" alt="сайт курсов английского языка">
+                    <a href="#" class="portfolio__link"  data-fancybox data-src="#site-3">
+                        <p class="portfolio__item-descr">Многостраничный сайт курсов английского языка </p>
+                    </a>
+                </div>
+                <div id="site-3" class="portfolio__popup">
+                    <div class="portfolio__popup-inner">
+                        <div class="portfolio__popup-info">
+                            <h5 class="portfolio__popup-title">Технологии, использованные при создании проекта:</h5>
+                            <ul class="portfolio__popup-list">
+                                <li class="portfolio__popup-item">HTML</li>
+                                <li class="portfolio__popup-item">SCSS</li>
+                                <li class="portfolio__popup-item">Jquery</li>
+                                <li class="portfolio__popup-item">JavaScript</li>
+                                <li class="portfolio__popup-item">Gulp</li>
+                                <li class="portfolio__popup-item">GitHub</li>
+                                <li class="portfolio__popup-item portfolio__popup-item--descr">Нажмите на изображение, чтобы увидеть веб-сайт в новой вкладке или выберите страницу :</li>
+                                <li class="portfolio__popup-item portfolio__popup-item--descr">
+                                    <a target="_blank" href="https://aaksi.github.io/ec/index.html">Главная страница</a>
+                                </li>
+                                <li class="portfolio__popup-item portfolio__popup-item--descr">
+                                    <a target="_blank" href="https://aaksi.github.io/ec/course.html">Страница каталога</a></li>
+                                <li class="portfolio__popup-item portfolio__popup-item--descr">
+                                    <a target="_blank" href="https://aaksi.github.io/ec/info.html">Страница с информацией о компании</a>
+                                </li>
+                                <li class="portfolio__popup-item portfolio__popup-item--descr">
+                                    <a target="_blank" href="https://aaksi.github.io/ec/reviews.html">Страница курса с отзывами</a>
+                                </li>
+                                <li class="portfolio__popup-item portfolio__popup-item--descr">
+                                    <a target="_blank" href="https://aaksi.github.io/ec/contacts.html">Страница контакты</a>
+                                </li>
+                                <li class="portfolio__popup-item portfolio__popup-item--descr">Щелкните <a target="_blank" href="https://github.com/aaksi/ec">здесь</a>, чтобы получить исходный код с GitHub.</li>
+                            </ul>
+                        </div>
+                        <a target="_blank" href="https://aaksi.github.io/ec/index.html" class="portfolio__popup-link">
+                            <img src="images/content/site3.jpg" alt="сайт курсов английского языка">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <img src="images/content/site4.jpg" alt="Сайт строительной компании">
+                    <a href="#" class="portfolio__link" data-fancybox data-src="#site-4">
+                        <p class="portfolio__item-descr">Сайт строительной компании</p>
+                    </a>
+                </div>
+                <div id="site-4" class="portfolio__popup">
+                    <div class="portfolio__popup-inner">
+                        <div class="portfolio__popup-info">
+                            <h5 class="portfolio__popup-title">Технологии, использованные при создании проекта:</h5>
+                            <ul class="portfolio__popup-list">
+                                <li class="portfolio__popup-item">HTML</li>
+                                <li class="portfolio__popup-item">SCSS</li>
+                                <li class="portfolio__popup-item">Jquery</li>
+                                <li class="portfolio__popup-item">БЭМ</li>
+                                <li class="portfolio__popup-item">JavaScript</li>
+                                <li class="portfolio__popup-item">Gulp</li>
+                                <li class="portfolio__popup-item">GitHub</li>
+                                <li class="portfolio__popup-item portfolio__popup-item--descr">Нажмите на изображение, чтобы увидеть веб-сайт в новой вкладке. </li>
+                                
+                                <li class="portfolio__popup-item portfolio__popup-item--descr">Щелкните <a target="_blank" href="https://github.com/aaksi/ExpertHouse">здесь</a>, чтобы получить исходный код с GitHub.</li>
+                            </ul>
+                        </div>
+                        <a target="_blank" href="https://aaksi.github.io/ExpertHouse/" class="portfolio__popup-link">
+                            <img src="images/content/site4.jpg" alt="Сайт строительной компании">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <img src="images/content/site5.jpg" alt="Сайт мебельной компании">
+                    <a href="#" class="portfolio__link" data-fancybox data-src="#site-5">
+                        <p class="portfolio__item-descr">Сайт мебельной компании</p>
+                    </a>
+                </div>
+                <div id="site-5" class="portfolio__popup">
+                    <div class="portfolio__popup-inner">
+                        <div class="portfolio__popup-info">
+                            <h5 class="portfolio__popup-title">Технологии, использованные при создании проекта:</h5>
+                            <ul class="portfolio__popup-list">
+                                <li class="portfolio__popup-item">HTML</li>
+                                <li class="portfolio__popup-item">SCSS</li>
+                                <li class="portfolio__popup-item">Jquery</li>
+                                <li class="portfolio__popup-item">БЭМ</li>
+                                <li class="portfolio__popup-item">JavaScript</li>
+                                <li class="portfolio__popup-item">Gulp</li>
+                                <li class="portfolio__popup-item">GitHub</li>
+                                <li class="portfolio__popup-item portfolio__popup-item--descr">Нажмите на изображение, чтобы увидеть веб-сайт в новой вкладке. </li>
+                                
+                                <li class="portfolio__popup-item portfolio__popup-item--descr">Щелкните <a target="_blank" href="https://github.com/aaksi/sbk">здесь</a>, чтобы получить исходный код с GitHub.</li>
+                            </ul>
+                        </div>
+                        <a target="_blank" href="https://aaksi.github.io/sbk/" class="portfolio__popup-link">
+                            <img src="images/content/site5.jpg" alt="Сайт мебельной компании">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <img src="images/content/site6.jpg" alt="Сайт таможенной компании">
+                    <a href="#" class="portfolio__link" data-fancybox data-src="#site-6">
+                        <p class="portfolio__item-descr">Сайт таможенной компании </p>
+                    </a>
+                </div>
+                <div id="site-6" class="portfolio__popup">
+                    <div class="portfolio__popup-inner">
+                        <div class="portfolio__popup-info">
+                            <h5 class="portfolio__popup-title">Технологии, использованные при создании проекта:</h5>
+                            <ul class="portfolio__popup-list">
+                                <li class="portfolio__popup-item">HTML</li>
+                                <li class="portfolio__popup-item">SCSS</li>
+                                <li class="portfolio__popup-item">Jquery</li>
+                                <li class="portfolio__popup-item">БЭМ</li>
+                                <li class="portfolio__popup-item">JavaScript</li>
+                                <li class="portfolio__popup-item">Gulp</li>
+                                <li class="portfolio__popup-item">GitHub</li>
+                                <li class="portfolio__popup-item portfolio__popup-item--descr">Нажмите на изображение, чтобы увидеть веб-сайт в новой вкладке. </li>
+                                
+                                <li class="portfolio__popup-item portfolio__popup-item--descr">Щелкните <a target="_blank" href="https://github.com/aaksi/td">здесь</a>, чтобы получить исходный код с GitHub.</li>
+                            </ul>
+                        </div>
+                        <a target="_blank" href="https://aaksi.github.io/td/" class="portfolio__popup-link">
+                            <img src="images/content/site6.jpg" alt="Сайт таможенной компании">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="contact__title">Контакты</h2>
+            <div class="contact__inner">
+                <ul class="contact__list">
+                    <li class="contact__item"><a href="tel:7900276790"><img src="images/icons/phone.svg" alt="Иконка телфона"></a>7 900 276 76 90</li>
+                    <li class="contact__item"><a href="mailto:kulikovstanislav55@gmail.com"><img src="images/icons/email.svg" alt="Иконка имэйл"></a>kulikovstanislav55@gmail.com</li>
+                    <li class="contact__item contact__item--icon"><a target="_blank" href="https://t.me/wildly13"><img src="images/icons/talegram.svg" alt="Иконка telegram"></a></li>
+                    <li class="contact__item contact__item--icon"><a target="_blank" href="https://github.com/aaksi"><img src="images/icons/github.svg" alt="Иконка github"></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
     <script src="js/main.min.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+
 </body>
 </html>
